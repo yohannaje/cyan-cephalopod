@@ -1530,6 +1530,29 @@
         "description": "Returns the OpenAPI file of this API.",
         "operationId": "f45b4333-54c1-450d-87f1-b02a6b508ae3"
       }
+    },
+    "/HELLO": {
+      "x-zuplo-path": {
+        "pathMode": "open-api"
+      },
+      "get": {
+        "summary": "New Route",
+        "description": "",
+        "x-zuplo-route": {
+          "corsPolicy": "none",
+          "handler": {
+            "export": "urlForwardHandler",
+            "module": "$import(@zuplo/runtime)",
+            "options": {
+              "baseUrl": "https://rickandmorty.zuplo.io"
+            }
+          },
+          "policies": {
+            "inbound": []
+          }
+        },
+        "operationId": "8a4c25b2-3373-4046-ad82-3c307d62e98b"
+      }
     }
   }
 }
