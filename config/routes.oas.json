@@ -20,27 +20,6 @@
     }
   ],
   "paths": {
-    "/hello": {
-      "x-zuplo-path": {
-        "pathMode": "open-api"
-      },
-      "get": {
-        "summary": "Hello World",
-        "description": "This is the first route to say hello",
-        "x-zuplo-route": {
-          "corsPolicy": "none",
-          "handler": {
-            "export": "default",
-            "module": "$import(./modules/hello-world)",
-            "options": {}
-          },
-          "policies": {
-            "inbound": []
-          }
-        },
-        "operationId": "004ff0e0-30cf-41a7-9e9f-zuplo35e3f725"
-      }
-    },
     "/v1/characters": {
       "get": {
         "summary": "Get all characters ",
